@@ -1,0 +1,27 @@
+extends layout.pug
+
+block appContent
+  center 
+  br
+  .container
+    .row
+      .col-md-2
+      .col-md-8
+        form(action="/buscar", method="GET")
+          .input-group
+              select#option.custom-select(name="option")
+                //- option(value='#', disabled='', selected='') Opciones
+                for i in items
+                  option(value=i._id) #{i.nombre}
+              input#word.form-control(type='text',placeholder="ingresa tu busqueda" name="word", required, autocomplete='off')
+              .input-group-prepend
+                button.btn.btn-secondary(type='submit') Buscar
+        
+          br
+          br
+          h4 MongoDB data
+          for i in items
+            p 
+              b  #{i.nombre} -> 
+              for f in i.subcat
+                label #{f.nombre} &nbsp; 

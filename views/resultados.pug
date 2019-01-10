@@ -1,0 +1,15 @@
+extends layout.pug
+
+block appContent
+  center 
+    h4 RESULTADOS DE BUSQUEDA
+  .container
+    //- h1=res
+    if res === false
+      h3 Sin coincidencias
+    else 
+      h3 #{res.length} Coinciencia(s)
+      //- h3=res
+      for i in res
+        h1 #{i.subcat.nombre} 
+
