@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const api = require('./routes/search');
 
 const app = express();
-const port  = process.env.PORT || 3000;
+const port  = process.env.PORT || 3001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 // Connexion with mongoose
@@ -23,6 +23,6 @@ app.use(api);
 //   res.render('account')
 // })
 
-app.listen(3000, ()=> {
+app.listen(port, ()=> {
   console.log(`Run in port ${port}!`);
 })
