@@ -1,0 +1,16 @@
+extends layout.pug
+
+block appContent
+  .container
+    .demo
+      #test.image-wrapper
+        img#image(src='#', width="220px")
+      br
+
+        //- button.btn.btn-secondary(type="button", onChange="savegame(this)") Subir
+      input#imp(type="file")
+      br 
+      button#mybut.btn.btn-primary(type="button") OK
+
+      #test2
+        img#image2(src='https://cdn0.iconfinder.com/data/icons/user-collection-4/512/add_user-512.png', height="100px")

@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+   padding: 0px}
+main{
+    min-height:500px;
+    display: block
+}
+pre{
+    overflow: auto;
+}
+.demo{
+    padding: 20px;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* #image-4-wrapper .rcrop-outer-wrapper{
+    opacity: .75;
+}
+#image-4-wrapper .rcrop-outer{
+    background: #000
+}
+#image-4-wrapper .rcrop-croparea-inner{
+    border: 1px dashed #fff;
+}
+
+#image-4-wrapper .rcrop-handler-corner{
+    width:12px;
+    height: 12px;
+    background: none;
+    border : 0 solid #51aeff;
+}
+#image-4-wrapper .rcrop-handler-top-left{
+    border-top-width: 4px;
+    border-left-width: 4px;
+    top:-2px;
+    left:-2px
+}
+#image-4-wrapper .rcrop-handler-top-right{
+    border-top-width: 4px;
+    border-right-width: 4px;
+    top:-2px;
+    right:-2px
+}
+#image-4-wrapper .rcrop-handler-bottom-right{
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+    bottom:-2px;
+    right:-2px
+}
+#image-4-wrapper .rcrop-handler-bottom-left{
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+    bottom:-2px;
+    left:-2px
+}
+#image-4-wrapper .rcrop-handler-border{
+    display: none;
+} */
+
+.upload-test-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .test {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .upload-test-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }

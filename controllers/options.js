@@ -80,11 +80,18 @@ try {
     res.render('resultados', {res: false})
   }
 }
+
+//Image
+function crop(req, res) {
+  res.render('image')
+}
+
 // Export
 module.exports = {
   getOptions,
   create,
   addcat,
   addsubcat,
-  buscar
+  buscar,
+  crop
 }
